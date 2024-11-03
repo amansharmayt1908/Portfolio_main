@@ -1,0 +1,238 @@
+body {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav_bar {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 3vw;
+
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5vw;
+    border-radius: 9%;
+}
+.q::before {
+    margin-left: auto;
+  }
+  
+  .q::after, .q::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .q:hover::after, .q:hover::before {
+    width: 100%;
+  }
+
+.profile_card {
+    background-color: #EEEEFF;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.box {
+    height: 40vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2vw;
+    background-color: rgb(255, 140, 0);
+
+}
+
+.img_box {
+    /* n: aqua; */
+    height: 35vw;
+    width: 26vw;
+    margin-left: 2vw;
+
+}
+
+.info_box {
+    /* n: aqua; */
+    height: 35vw;
+    width: 49vw;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fade 1s ease-in forwards;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img {
+    height: 35vw;
+    width: 25vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    display: inline-block;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    /* n: pink; */
+    width: 150vw;
+
+}
+
+.scroll_box {
+    /* n: blueviolet; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15vw;
+    margin-left: 0vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50vw;
+
+}
+
+.scroll {
+    font-size: 5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.am {
+    margin-top: -3vw;
+    justify-content: center;
+    display: inline-block;
+    padding: 0;
+    margin-left: 5.5vw;
+}
+
+.brief {
+    margin-left: 11vw;
+    margin-top: -2vw;
+
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#b2 {
+    margin-left: 13.5vw;
+}
+
+.yt {
+    height: 2vw;
+    width: 2.5vw;
+    background-image: url('yt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 33vw;
+    margin-left: 10vw;
+}
+
+.b {
+    margin-left: 5vw;
+}
+
+.ancor {
+    padding-top: 0%;
+    margin-left: -5vw;
+}
+
+button.yt {
+    margin-left: -5vw;
+}
+
+@media (max-width: 600px) {
+    
+    .info_box{
+        position: relative;
+        height: 50vw;
+        width: 100vw;
+        /* justify-content: center;
+        align-items: center; */
+        margin-top: 135vw;
+        font-size: 9vw;
+        margin-left: -29vw;
+        /* margin-right: 20vw; */
+        /* background-color: aqua; */
+    }
+    h1.b{
+        margin-left: 15vw;
+        margin-top: -4vw;
+    }
+    .text{
+        font-size: 5vw;
+        margin-left: 5vw;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        height: 80vw;
+        margin-top:2vw;
+    }
+    img{
+        margin-left: 19vw;
+        margin-top: -20vw;
+        height: 75vw;
+        width: 55vw;
+        object-fit: cover;
+        border-radius: 1vw;
+    }
+    .nav_bar{
+        height: 5vw;
+        /* font-size: 7%; */
+
+    }
+    button{
+        font-size: 4vw;
+
+    }
+    .am{
+        margin-left: 33vw;
+        margin-top: -15vw;
+    }
+    
+    #b2{
+        margin-top: -6vw;
+        margin-left: 17vw;
+    }
+    button.yt{
+        margin-top: 75vw;
+        height: 4vw;
+        width: 6vw;
+
+    }
+}
